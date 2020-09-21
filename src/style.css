@@ -9,7 +9,8 @@
 	--main-gray: #3b3b3b;
     --main-lightgray: #dfe1e6;
 	--main-black: #000000;
-	--main-red: #FF595E;
+    --main-red: #FF595E;
+    --main-navy: #052752;
 }
 
 html {
@@ -38,9 +39,9 @@ a:focus { outline: none; }
 
 #hero h1#hero-landing {
     position: absolute;
-    top: 39vw;
-    left: 18%;
-    color: var(--main-black);
+    top: 3vw;
+    left: 3%;
+    color: var(--main-white);
     font-size: 9vw;
 }
 
@@ -68,6 +69,51 @@ a:focus { outline: none; }
     font-size: 4vw;
 }
 
+/* overview page */
+#overview {
+    color: var(--main-black);
+    margin: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+#overview h2 {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 30%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#overview p{
+    margin-left: 15%;
+    margin-bottom: 5%;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* features page */
+#features {
+    background-color: var(--main-navy);
+    height: 100vh;
+    color: var(--main-white);
+    margin: auto;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#features ul {
+    margin: auto;
+    margin-top: 35%;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* navbar */
 #navbar ul {
     padding: 0 10%;
@@ -77,6 +123,7 @@ a:focus { outline: none; }
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 #navbar li {
@@ -87,23 +134,23 @@ a:focus { outline: none; }
     display: block;
     text-align: center;
     padding: 15px 20px 12px 20px;
-    border-bottom: solid #dfe1e6 3px;
+    border-bottom: solid var(--main-lightgray) 3px;
     font-weight: 600;
 }
 
 #navbar li a:hover {
-    border-bottom: solid red 3px;
+    border-bottom: solid var(--main-red) 3px;
 }
 
 #navbar ul li a.nav-selection {
-    border-bottom: solid red 3px;
+    border-bottom: solid var(--main-red) 3px;
 }
 
 /* specifications table */
 #spec-table {
     min-width: 60%;
     margin: auto;
-    padding-top: 5vh;
+    margin-top: 5vh;
     border-collapse: collapse;
 }
 
