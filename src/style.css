@@ -1,0 +1,134 @@
+/* base reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --main-white: #FFF;
+	--main-gray: #3b3b3b;
+    --main-lightgray: #dfe1e6;
+	--main-black: #000000;
+	--main-red: #FF595E;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--main-white);
+	font-family: 'Titillium Web', sans-serif;
+	text-align: left;
+    color: var(--main-black);
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+a:visited { color: inherit; }
+a:focus { outline: none; }
+
+/* hero content */
+#hero img.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#hero h1#hero-landing {
+    position: absolute;
+    top: 39vw;
+    left: 18%;
+    color: var(--main-black);
+    font-size: 9vw;
+}
+
+#hero h1#hero-overview {
+    position: absolute;
+    top: 15vw;
+    right: 12%;
+    color: var(--main-white);
+    font-size: 4vw;
+}
+
+#hero h1#hero-features {
+    position: absolute;
+    top: 23vw;
+    left: 18%;
+    color: var(--main-white);
+    font-size: 4vw;
+}
+
+#hero h1#hero-specs {
+    position: absolute;
+    top: 8vw;
+    left: 10%;
+    color: var(--main-white);
+    font-size: 4vw;
+}
+
+/* navbar */
+#navbar ul {
+    padding: 0 10%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--main-lightgray);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    text-align: center;
+    padding: 15px 20px 12px 20px;
+    border-bottom: solid #dfe1e6 3px;
+    font-weight: 600;
+}
+
+#navbar li a:hover {
+    border-bottom: solid red 3px;
+}
+
+#navbar ul li a.nav-selection {
+    border-bottom: solid red 3px;
+}
+
+/* specifications table */
+#spec-table {
+    min-width: 60%;
+    margin: auto;
+    padding-top: 5vh;
+    border-collapse: collapse;
+}
+
+#spec-table tr:nth-child(even) {
+    background-color: var(--main-lightgray);
+}
+
+#spec-table th , #spec-table td {
+    text-align: center;
+}
+
+#spec-table th {
+    padding-bottom: 5vh;
+}
+
+#spec-table td {
+    height: 50px;
+    vertical-align: auto;
+}
+
+#spec-table .spec-left {
+    text-align: left;
+}
+
+#spec-table .spec-img {
+    max-width: 6vw;
+    height: auto;
+}
